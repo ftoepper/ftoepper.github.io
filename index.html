@@ -12,6 +12,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Salesforce Consulting - Effiziente Lösungen von Fabian Toepper</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/all.min.js"></script>
   <style>
     body { scroll-behavior: smooth; }
   </style>
@@ -19,11 +20,11 @@
 <body class="font-sans bg-gray-50 text-gray-800 antialiased">
   
   <!-- Hero Section mit Navigation -->
-  <section class="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white py-32 flex flex-col items-center text-center">
+  <section class="relative bg-gradient-to-r from-blue-500 to-purple-500 text-white py-48 flex flex-col items-center text-center">
     <div class="absolute top-0 left-0 w-full flex justify-center py-6">
       <nav class="flex space-x-6 text-lg">
         <a href="#about" class="text-gray-300 hover:text-white transition">Über mich</a>
-        <a href="#salesforce-leistungen" class="text-gray-300 hover:text-white transition">Leistungen</a>
+        <a href="#salesforce-leistungen" class="text-gray-300 hover:text-white transition">Services</a>
         <a href="#contact" class="text-gray-300 hover:text-white transition">Kontakt</a>
       </nav>
     </div>
@@ -35,59 +36,160 @@
   </section>
   
   <!-- Über mich -->
-  <section id="about" class="py-20 bg-gray-50 relative">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 items-center">
-      <div>
-        <h3 class="text-3xl font-bold text-gray-800">Über mich</h3>
-        <p class="mt-4 text-gray-600">Ich bin ein erfahrener Salesforce-Consultant mit über 5 Jahren Erfahrung in der Automatisierung von Prozessen, der Entwicklung komplexer Flows und der Integration von Salesforce in Unternehmensstrukturen.</p>
-        <div class="mt-10 relative max-w-4xl mx-auto px-4 md:px-6">
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg transform rotate-2"></div>
-          <div class="relative bg-white p-6 rounded-lg shadow-lg transform -rotate-1">
+  <section id="about" class="py-20 bg-white px-6">
+    <div class="text-center">
+    <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-black">
+        <span class="">Über mich</span>
+    </h3>
+    </div>
+    <div class="mt-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex justify-center">
+            <img src="assets/bspic.jpg" alt="Fabian Toepper" class="rounded-full shadow-lg w-64 h-64">
+          </div>
+        <div>
+        <p class="mt-4 text-gray-600">Mit über acht Jahren Erfahrung im Salesforce-Ökosystem unterstütze ich Unternehmen dabei, ihre Geschäftsprozesse effizienter, automatisierter und skalierbarer zu gestalten. Mein Fokus liegt auf der Entwicklung maßgeschneiderter Salesforce-Lösungen – von der strategischen Beratung über die technische Umsetzung bis hin zur langfristigen Optimierung.</br></br>
+            Ich arbeite sowohl mit Startups als auch mit etablierten Unternehmen und kenne die Herausforderungen beider Welten. Mein Ziel ist es, komplexe Workflows zu vereinfachen und Unternehmen mit individuell abgestimmten Salesforce-Lösungen nachhaltig zu stärken.</p>
+            <div class="mt-10 p-1 bg-blue-400 rounded-lg shadow-lg transition rotate-2 duration-300 hover:scale-105">
+            <div class="p-6 bg-blue-100 rounded-lg shadow-lg transition -rotate-2">
             <h4 class="text-xl font-semibold">Mission</h4>
             <p class="mt-4 text-gray-700">"Simplify complex workflows and empower businesses with tailored Salesforce solutions."</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <img src="URL_ZU_DEINEM_BILD" alt="Fabian Toepper" class="rounded-lg shadow-lg w-80">
-      </div>
+          </div></div>
+    </div>
     </div>
   </section>
   
   <!-- Leistungen -->
-  <section id="salesforce-leistungen" class="py-20 bg-gray-900 text-white relative">
-    <div class="max-w-6xl mx-auto text-center px-6">
-      <h3 class="text-3xl font-bold">Leistungen</h3>
+  <section id="salesforce-leistungen" class="py-20 bg-gray-900 text-white text-center px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center">
+            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight">
+                <span class="text-white">Services</span>
+            </h3>
+
+        </div>
       <p class="mt-4 text-gray-400">Maßgeschneiderte Salesforce-Lösungen für Ihr Unternehmen.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg transition duration-300 hover:scale-105">
           <h4 class="text-xl font-semibold">Implementierung</h4>
-          <p class="mt-2 text-gray-400">Effiziente Einrichtung und Anpassung von Salesforce-Lösungen.</p>
+          <p class="mt-2 text-gray-400">Reibungslose Einführung neuer Prozesse und Funktionen in Salesforce – passgenau konzipiert, nahtlos integriert und optimal auf Ihre Geschäftsanforderungen abgestimmt.</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg transition duration-300 hover:scale-105">
           <h4 class="text-xl font-semibold">Prozessautomatisierung</h4>
-          <p class="mt-2 text-gray-400">Automatisierte Workflows und smarte Integrationen.</p>
+          <p class="mt-2 text-gray-400">Effiziente Automatisierung Ihrer Abläufe zur Reduzierung manueller Aufgaben, Optimierung von Workflows und Steigerung der Produktivität.</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg transition duration-300 hover:scale-105">
           <h4 class="text-xl font-semibold">Strategische Beratung</h4>
-          <p class="mt-2 text-gray-400">Individuelle Salesforce-Strategien für nachhaltigen Erfolg.</p>
+          <p class="mt-2 text-gray-400">Individuelle Salesforce-Strategien für nachhaltiges Wachstum, bessere Skalierbarkeit und eine effiziente Prozessoptimierung.</p>
         </div>
       </div>
     </div>
   </section>
   
+  <!-- Timeline -->
+  <section class="py-20 bg-white px-6">
+    <div class="max-w-screen-md mx-auto flex flex-col justify-between">
+
+        <div class="text-center">
+            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
+                Der <span class="text-blue-500">Prozess</span>
+            </h3>
+        </div>
+        <div class="mt-24">
+            <ul class="">
+                <li class=" bg-gray-100 p-5 pb-10 text-center mb-20 rounded-lg shadow-lg transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0 relative top-0 -mt-16">
+                            <div
+                                class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-500 text-white border-4 border-white text-xl font-semibold">
+                                1
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="text-lg leading-6 font-semibold text-gray-900">Erstgespräch</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                Wir besprechen Ihre Anforderungen, Ziele und Herausforderungen. Hier klären wir, ob und wie Salesforce ihr Unternehmen optimal unterstützen kann.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class=" bg-gray-100 p-5 pb-10 text-center mb-20 rounded-lg shadow-lg transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0 relative top-0 -mt-16">
+                            <div
+                                class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-500 text-white border-4 border-white text-xl font-semibold">
+                                2
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="text-lg leading-6 font-semibold text-gray-900">Analyse</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                Ich prüfe die Machbarkeit der Anforderungen, erstelle eine Aufwandseinschätzung und definiere den zeitlichen Rahmen.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class=" bg-gray-100 p-5 pb-10 text-center mb-20 rounded-lg shadow-lg transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0 relative top-0 -mt-16">
+                            <div
+                                class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-500 text-white border-4 border-white text-xl font-semibold">
+                                3
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="text-lg leading-6 font-semibold text-gray-900">Angebot</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                Basierend auf der Analyse erstelle ich ein individuelles Angebot mit klaren Leistungs- und Kostendetails.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class=" bg-gray-100 p-5 pb-10 text-center mb-20 rounded-lg shadow-lg transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex-shrink-0 relative top-0 -mt-16">
+                            <div
+                                class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-500 text-white border-4 border-white text-xl font-semibold">
+                                4
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="text-lg leading-6 font-semibold text-gray-900">Umsetzung</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                In enger Zusammenarbeit mit Ihnen und ihrem Team setze ich die geplante Lösung um, teste sie ausgiebig und stelle sicher, dass alles reibungslos funktioniert.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+  
   <!-- Kontakt -->
-  <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-purple-500 text-white text-center relative">
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center relative px-6">
     <div class="max-w-4xl mx-auto p-10 bg-white bg-opacity-10 rounded-lg shadow-lg backdrop-blur-md">
-      <h3 class="text-3xl font-bold">Kontakt</h3>
+        <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
+            <span class="text-white">Kontakt</span>
+        </h3>
       <p class="mt-4 text-gray-200">Lassen Sie uns Ihre Salesforce-Strategie optimieren!</p>
       <a href="mailto:dein.email@example.com" class="mt-6 inline-block bg-white text-blue-600 hover:bg-gray-200 px-6 py-3 rounded-lg shadow-lg transition text-lg">Jetzt Nachricht senden</a>
     </div>
   </section>
-  
-  <!-- Footer -->
-  <footer class="py-6 bg-gray-900 text-center text-gray-400">
-    <p>&copy; 2025 Fabian Toepper. Alle Rechte vorbehalten.</p>
+
+  <!-- Footer mit Social Icons -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-400 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="space-x-4">
+            <a href="#" class="hover:text-white">Impressum</a>
+            <a href="#" class="hover:text-white">Datenschutz</a>
+          </div>
+      <p>&copy; 2025 Fabian Toepper. Alle Rechte vorbehalten.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
