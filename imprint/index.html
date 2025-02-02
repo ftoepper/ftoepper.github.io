@@ -3,15 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz & Impressum - Fabian Toepper</title>
+  <title>Impressum - Fabian Toepper</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/all.min.js"></script>
   <style>
     body { scroll-behavior: smooth; }
   </style>
-</head>
-<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
   
+      menuButton.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        menuOpenIcon.classList.toggle("hidden");
+        menuCloseIcon.classList.toggle("hidden");
+      });
+    });
+  </script>
+</head>
+<nav class="bg-gray-900">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg id="menu-open-icon" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="menu-close-icon" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <a href="https://fabiantoepper.com" class="">
+          <img class="h-8 w-auto" src="" alt="Fabian Toepper">
+          </a>
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Über mich</a>
+            <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Services</a>
+            <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div class="hidden sm:hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+      <a href="#about" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Über mich</a>
+            <a href="#services" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Services</a>
+            <a href="#contact" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Kontakt</a>
+    </div>
+  </div>
+</nav>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
   <!-- Header -->
   <header class="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center py-16">
     <h1 class="text-4xl font-bold">Impressum</h1>
@@ -20,7 +74,7 @@
   <section class="py-16 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-10 mb-10">
     
     <h3 class="mt-8 text-xl font-semibold text-gray-900">Angaben gemäß § 5 TMG</h3>
-    <p class="mt-2 text-gray-600">Fabian Toepper<br> Dorfstraße 9, 48612 Horstmar<br> E-Mail: kontakt@example.com</p>
+    <p class="mt-2 text-gray-600">Fabian Toepper<br> Dorfstraße 9, 48612 Horstmar<br> E-Mail: hello@fabiantoepper.com</p>
     
     <h3 class="mt-8 text-xl font-semibold text-gray-900">Haftung für Inhalte</h3>
     <p class="mt-2 text-gray-600">Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
@@ -35,7 +89,7 @@
   <footer class="py-6 bg-gray-900 text-center text-gray-400 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div class="space-x-4">
-            <a href="imprint" class="hover:text-white">Impressum</a>
+            <a href="../imprint" class="hover:text-white">Impressum</a>
           </div>
       <p>&copy; 2025 Fabian Toepper. Alle Rechte vorbehalten.</p>
       <div class="flex space-x-4">

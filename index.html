@@ -16,29 +16,85 @@
   <style>
     body { scroll-behavior: smooth; }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+  
+      menuButton.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        menuOpenIcon.classList.toggle("hidden");
+        menuCloseIcon.classList.toggle("hidden");
+      });
+    });
+  </script>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 antialiased">
+    <nav class="bg-gray-900">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg id="menu-open-icon" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg id="menu-close-icon" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex shrink-0 items-center">
+                <a href="https://fabiantoepper.com" class="">
+                    <img class="h-8 w-auto" src="" alt="Fabian Toepper">
+                </a>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Über mich</a>
+                  <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Services</a>
+                  <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Kontakt</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <a href="#about" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Über mich</a>
+                  <a href="#services" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Services</a>
+                  <a href="#contact" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white">Kontakt</a>
+          </div>
+        </div>
+      </nav>
+  
   
   <!-- Hero Section mit Navigation -->
-  <section class="relative bg-gradient-to-r from-blue-500 to-purple-500 text-white py-48 flex flex-col items-center text-center">
-    <div class="absolute top-0 left-0 w-full flex justify-center py-6">
-      <nav class="flex space-x-6 text-lg">
-        <a href="#about" class="text-gray-300 hover:text-white transition">Über mich</a>
-        <a href="#salesforce-leistungen" class="text-gray-300 hover:text-white transition">Services</a>
-        <a href="#contact" class="text-gray-300 hover:text-white transition">Kontakt</a>
-      </nav>
-    </div>
+  <section class="relative bg-gradient-to-r from-blue-600 to-purple-400 text-white md:py-44 sm:py-36 py-32 flex flex-col items-center text-center">
+    <!--div class="absolute top-0 left-0 w-full flex justify-center py-6">
+        <nav class="flex space-x-6 text-lg">
+          <a href="#about" class="text-gray-200 hover:text-white transition">Über mich</a>
+          <a href="#salesforce-leistungen" class="text-gray-200 hover:text-white transition">Services</a>
+          <a href="#contact" class="text-gray-200 hover:text-white transition">Kontakt</a>
+        </nav>
+      </div-->
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-6xl font-bold leading-tight">Salesforce Consulting<br><span class="text-blue-200">Effizient. Modern. Skalierbar.</span></h2>
-      <p class="mt-6 text-lg text-gray-300">Optimierung und Automatisierung von Prozessen<br>mit maßgeschneiderten Salesforce-Lösungen.</p>
-      <a href="#contact" class="mt-10 inline-block bg-white text-blue-600 hover:bg-gray-200 px-8 py-4 rounded-lg shadow-lg transition text-lg">Jetzt Kontakt aufnehmen</a>
+      <p class="mt-6 text-lg text-gray-200">Optimierung und Automatisierung von Prozessen<br>mit maßgeschneiderten Salesforce-Lösungen.</p>
+      <a href="#contact" class="mt-10 inline-block bg-white text-blue-600 hover:bg-gray-200 hover:scale-105 duration-300 px-8 py-4 rounded-lg shadow-lg transition text-lg">Jetzt Kontakt aufnehmen</a>
     </div>
   </section>
   
   <!-- Über mich -->
   <section id="about" class="py-20 bg-white px-6">
     <div class="text-center">
-    <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-black">
+    <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold text-black">
         <span class="">Über mich</span>
     </h3>
     </div>
@@ -59,10 +115,10 @@
   </section>
   
   <!-- Leistungen -->
-  <section id="salesforce-leistungen" class="py-20 bg-gray-900 text-white text-center px-6">
+  <section id="services" class="py-20 bg-gray-900 text-white text-center px-6">
     <div class="max-w-6xl mx-auto">
         <div class="text-center">
-            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight">
+            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold text-black">
                 <span class="text-white">Services</span>
             </h3>
 
@@ -90,8 +146,8 @@
     <div class="max-w-screen-md mx-auto flex flex-col justify-between">
 
         <div class="text-center">
-            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-                Der <span class="text-blue-500">Prozess</span>
+            <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold text-gray-900">
+                Der <span class="text-blue-500">Ablauf</span>
             </h3>
         </div>
         <div class="mt-24">
@@ -166,13 +222,13 @@
     </section>
   
   <!-- Kontakt -->
-  <section id="contact" class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center relative px-6">
-    <div class="max-w-4xl mx-auto p-10 bg-white bg-opacity-10 rounded-lg shadow-lg backdrop-blur-md">
-        <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-            <span class="text-white">Kontakt</span>
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-purple-400 text-gray-900 text-center relative px-6">
+    <div class="max-w-4xl mx-auto p-10 bg-white bg-gray-100 rounded-lg shadow-lg backdrop-blur-md bg-opacity-90">
+        <h3 class="text-4xl sm:text-5xl leading-normal font-extrabold">
+            <span class="text-gray-900">Kontakt</span>
         </h3>
-      <p class="mt-4 text-gray-200">Lassen Sie uns Ihre Salesforce-Strategie optimieren!</p>
-      <a href="mailto:dein.email@example.com" class="mt-6 inline-block bg-white text-blue-600 hover:bg-gray-200 px-6 py-3 rounded-lg shadow-lg transition text-lg">Jetzt Nachricht senden</a>
+      <p class="mt-4 text-gray-900">Lassen Sie uns Ihre Salesforce-Strategie optimieren!</p>
+      <a href="mailto:dein.email@example.com" class="mt-6 inline-block bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 duration-300 px-6 py-3 rounded-lg shadow-lg transition text-lg">Jetzt Nachricht senden</a>
     </div>
   </section>
 
@@ -180,7 +236,7 @@
   <footer class="py-6 bg-gray-900 text-center text-gray-400 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div class="space-x-4">
-            <a href="imprint.html" class="hover:text-white">Impressum</a>
+            <a href="./imprint" class="hover:text-white">Impressum</a>
           </div>
       <p>&copy; 2025 Fabian Toepper. Alle Rechte vorbehalten.</p>
       <div class="flex space-x-4">
